@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<algo name="morpho_lowlight_params">
+       <camera id= "0">
+            <params index="0"
+             num_merge = "1"
+             iso = "110">
+            </params>
+            <params index="1"
+             num_merge = "1"
+             iso = "200">
+            </params>
+            <params index="2"
+             num_merge = "3"
+             iso = "400">
+            </params>
+            <params index="3"
+             num_merge = "3"
+             iso = "800">
+            </params>
+            <params index="4"
+             num_merge = "3"
+             iso = "1200">
+            </params>
+            <params index="5"
+             num_merge = "3"
+             iso = "1600">
+            </params>
+            <params index="6"
+             num_merge = "5"
+             iso = "2400">
+            </params>
+            <params index="7"
+             num_merge = "5"
+             iso = "3200">
+            </params>
+            <params index="8"
+             num_merge = "5"
+             iso = "4000">
+            </params>
+            <params index="9"
+             num_merge = "5"
+             iso = "4800">
+            </params>
+       </camera>
+       <camera id= "1">
+            <params index="0"
+             num_merge = "1"
+             iso = "120">
+            </params>
+            <params index="1"
+             num_merge = "1"
+             iso = "200">
+            </params>
+            <params index="2"
+             num_merge = "3"
+             iso = "400">
+            </params>
+            <params index="3"
+             num_merge = "3"
+             iso = "800">
+            </params>
+            <params index="4"
+             num_merge = "3"
+             iso = "1200">
+            </params>
+            <params index="5"
+             num_merge = "3"
+             iso = "1600">
+            </params>
+            <params index="6"
+             num_merge = "4"
+             iso = "2400">
+            </params>
+            <params index="7"
+             num_merge = "4"
+             iso = "3200">
+            </params>
+       </camera>
+</algo>

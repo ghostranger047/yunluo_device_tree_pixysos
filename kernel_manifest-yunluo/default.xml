@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/" />
+  <remote name="mt6789-dev" fetch="https://github.com/xiaomi-mt6789-devs" revision="13" />
+
+  <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
+
+  <project path="yunluo-kernel" name="kernel_xiaomi-yunluo" remote="mt6789-dev">
+    <linkfile dest="build.config" src="build.config.yunluo" />
+  </project>
+
+  <project path="mediatek-modules/gpu" name="kernel_mediatek-modules_gpu" remote="mt6789-dev" />
+
+  <project path="mediatek-modules/connectivity/common"
+    name="kernel_mediatek-modules_connectivity_common" remote="mt6789-dev" />
+  <project path="mediatek-modules/connectivity/connfem"
+    name="kernel_mediatek-modules_connectivity_connfem" remote="mt6789-dev" />
+
+  <project path="mediatek-modules/connectivity/bt/mt66xx"
+    name="kernel_mediatek-modules_connectivity_bt_mt66xx" remote="mt6789-dev" />
+
+  <project path="mediatek-modules/connectivity/fmradio"
+    name="kernel_mediatek-modules_connectivity_fmradio" remove="mt6789-dev" />
+
+  <project path="mediatek-modules/connectivity/wlan/adaptor"
+    name="kernel_mediatek-modules_connectivity_wlan_adaptor" remote="mt6789-dev" />
+  <project path="mediatek-modules/connectivity/wlan/core/gen4m"
+    name="kernel_mediatek-modules_connectivity_wlan_core_gen4m" remote="mt6789-dev" />
+
+  <project path="build" name="kernel/build" remote="aosp" />
+  <project path="kernel/tests" name="kernel/tests" remote="aosp" />
+  <project path="kernel/configs" name="kernel/configs" remote="aosp" />
+  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device"
+    revision="android12-5.10" remote="aosp" />
+  <project path="prebuilts-master/clang/host/linux-x86"
+    name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"
+    name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" />
+  <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" remote="aosp" />
+</manifest>

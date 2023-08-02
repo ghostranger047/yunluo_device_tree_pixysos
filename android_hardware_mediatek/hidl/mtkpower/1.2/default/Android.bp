@@ -1,0 +1,23 @@
+cc_binary {
+    name: "vendor.mediatek.hardware.mtkpower@1.2-service.stub",
+    defaults: ["hidl_defaults"],
+    init_rc: ["vendor.mediatek.hardware.mtkpower@1.2-service.stub.rc"],
+    vendor: true,
+    relative_install_path: "hw",
+    srcs: [
+        "MtkPerf.cpp",
+        "MtkPower.cpp",
+        "MtkPowerCallback.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libhidlbase",
+        "libutils",
+        "libbinder_ndk",
+        "android.hardware.power-V2-ndk",
+        "vendor.mediatek.hardware.mtkpower@1.0",
+        "vendor.mediatek.hardware.mtkpower@1.1",
+        "vendor.mediatek.hardware.mtkpower@1.2",
+    ],
+}
